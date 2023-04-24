@@ -8,3 +8,38 @@ Response:
 
 ### Watch Trailer
 ![](docs/images/movie-search-trailer.png)
+
+# Settings
+Path: `{application directory}/data/config/settings.json`  
+```json
+{
+  "DiscordToken": "",
+  "TMDbToken": "",
+  "Plex": {
+    "Host": "http://127.0.0.1",
+    "Port": 32400,
+    "Token": ""
+  },
+  "Radarr": {
+    "Host": "http://127.0.0.1",
+    "LanguageProfileId": 1,
+    "Port": 8310,
+    "QualityProfileId": 1,
+    "RootFolderPath": "",
+    "Token": ""
+  },
+  "SabNZBD": {
+    "Host": "http://127.0.0.1",
+    "Port": 8080,
+    "Token": ""
+  },
+  "Sonarr": {
+    "Host": "http://127.0.0.1",
+    "LanguageProfileId": 1,
+    "Port": 8989,
+    "QualityProfileId": 1,
+    "RootFolderPath": "",
+    "Token": ""
+  }
+}
+```
