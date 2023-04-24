@@ -43,11 +43,11 @@ internal static class SlashTVCommand
                         .WithButton($"Add {result.Title}", "add-series-button-id")
                         ;
 
-                    await command.RespondAsync(embed: embedBuilder.Build(), components: addButton.Build());
+                    await command.RespondAsync(embed: embedBuilder.Build(), components: addButton.Build(), ephemeral: true);
                 }
                 else
                 {
-                    await command.RespondAsync(embed: embedBuilder.Build());
+                    await command.RespondAsync(embed: embedBuilder.Build(), ephemeral: true);
                 }
                 break;
         }
